@@ -12,28 +12,28 @@
 
     <div class="contenedor">
 
-      <form action="" method="post">
+      <form action="https://postman-echo.com/post" method="post">
         <fieldset>
           <legend>🧑🏼Datos Personales 👀</legend>
 
-          <div> 
+          <div class="datos"> 
             <label>Nombre:*</label>
-            <input type="text" name="nombre" required>
+            <input class="ancho-i-s-t" type="text" name="nombre" required>
           </div> <!-- nombre -->
           
-          <div> 
+          <div class="datos"> 
             <label>Apellido:*</label>
-            <input type="text" name="apellido" required>
+            <input class="ancho-i-s-t" type="text" name="apellido" required>
           </div> <!-- apellido -->
           
-          <div> 
+          <div class="datos"> 
             <label>Documento:*</label>
-            <input type="text" pattern="[0-9]+" title="solo números" name="dni" required>
+            <input class="ancho-i-s-t" type="text" pattern="[0-9]+" title="solo números" name="dni" required>
           </div> <!-- documento -->
           
-          <div> 
+          <div class="datos"> 
             <label>Nacionalidad:*</label>
-            <select name="nacionalidad" required>
+            <select class="ancho-i-s-t" name="nacionalidad" required>
               <option value="">- Seleccionar -</option>
               <option value="argentina">Argentina</option>
               <option value="brasileña">Brasileña</option>
@@ -42,15 +42,15 @@
             </select>
           </div> <!-- nacionalidad -->
 
-          <div>
+          <div class="datos">
             <label>Contanos un poco de vos...</label>
-            <textarea name="info"></textarea>
+            <textarea class="ancho-i-s-t" name="info"></textarea>
           </div> <!-- info -->
 
-          <div>
+          <div class="datos">
             <label>Sexo:*</label>
 
-            <div class="genero-contenedor">
+            <div class="contenedor-cuadrados-circulos">
               <input id="femenino" type="radio" name="genero" value="femenino">
               <label for="femenino">Femenino</label>
               <input id="masculino" type="radio" name="genero" value="masculino">
@@ -65,14 +65,14 @@
         <fieldset>
           <legend>📱Datos de contacto 📩</legend>
 
-          <div>
+          <div class="datos">
             <label>Teléfono:</label>
-            <input type="text" pattern="[+0-9]+" name="telefonno" placeholder="Código de área y número" required>
+            <input class="ancho-i-s-t" type="text" pattern="[+0-9]+" name="telefonno" placeholder="Código de área y número" required>
           </div> <!-- telefono -->
 
-          <div>
+          <div class="datos">
             <label>Dirección de correo electrónico:*</label>
-            <input type="email" name="correo" placeholder="Ej: mail@gmail.com" required>
+            <input class="ancho-i-s-t" type="email" name="correo" placeholder="Ej: mail@gmail.com" required>
           </div> <!-- correo -->
         </fieldset>
 
@@ -82,7 +82,7 @@
 
           <div>
             <label>Sede Palermo</label>
-            <div class="sede">
+            <div class="sede contenedor-cuadrados-circulos">
               <input type="checkbox" name="actividad" value="basquet">
               <label>Básquet</label>
               <input type="checkbox" name="actividad" value="boxeo">
@@ -94,7 +94,7 @@
             </div> <!-- sede palermo -->
 
             <label>Sede Rosario</label>
-            <div class="sede">
+            <div class="sede contenedor-cuadrados-circulos">
               <input type="checkbox" name="actividad" value="basquet">
               <label>Básquet</label>
               <input type="checkbox" name="actividad" value="futbol">
@@ -109,20 +109,22 @@
 
         </fieldset>
 
-        <div class="terminos">
+        <div class="terminos contenedor-cuadrados-circulos">
           <input id="lbl-condiciones" type="checkbox" name="terminos" value="condiciones" required>
           <label for="lbl-condiciones">Acepto las condiciones*</label>
         </div>
         
-        <div class="terminos">
+        <div class="terminos contenedor-cuadrados-circulos">
           <input id="lbl-novedades" type="checkbox" name="terminos" value="novedades">
           <label for="lbl-novedades">Deseo recibir novedades</label>
         </div>
 
         <p class="color-p">*: campo obligatorio.</p>
 
-        <button type="submit">Iniciar afiliación</button>
-        <button type="reset">Restablecer</button>
+        <div class="datos">
+          <button type="submit">Iniciar afiliación</button>
+          <button type="reset">Restablecer</button>
+        </div>
 
       </form>
     </div> <!-- .contenedor -->

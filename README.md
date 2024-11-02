@@ -183,3 +183,14 @@ En varios elementos que están en el archivo index.html, tendrán clases, me va 
 </div> <!-- sedes -->
 ``` 
 
+## FOCUS
+En el archivo css, estaré trabajando con focus, ¿la finlidad? que cuando seleccione un input o textarea, cambie tanto su color de fondo en estos elementos como en el elemento fieldset y mantenga el el color asignado:
+```sh
+input:focus, textarea:focus{
+  background-color: rgb(43, 98, 69);
+}
+fieldset:focus-within{
+  background-color: rgb(170, 191, 188);
+}
+```
+* Nota: focus-within, es una pseudoclase que aplica estilos a un elemento (ene este caso fieldset), cuando cualquiera de sus elementos descendientes tengan el foco. Entonces si sleccion un input, cambia su color de fondo y el color de fondo del elemento fieldset.

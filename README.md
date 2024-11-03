@@ -255,3 +255,77 @@ textarea{
   min-height: 100px; # no podrás minimizar menos de esto
 }
 ```
+
+## Importandon fuente para los textos, actualizacion de elementos y sus colores
+
+### Importando tipografías
+Importe tipografías, son las que verás al inicio del archivo css, me serviran para darle una fuente al titulo y todo texto que se encuentre dentro del elemento html (menos el titulo que tendrá otra distinta):
+```sh
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  font-size: 50px; # el tamañao del titulo
+  font-family: "Roboto", sans-serif; 
+  font-weight: 900; # el grosor del titulo
+}
+```
+### Espacios de margen en algunos elementos
+Fuí agregando espacios de margen en algunos elementos y clases, te los mostraré:
+```sh
+p{
+  margin-bottom: 40px;
+  margin-left: 8.5%;
+}
+
+button{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.terminos{
+  margin-left: 8.5%;
+}
+```
+* Nota: en el elemento button, su padding no estará en 2%, lo actualicé a 20px, el motivo es porque al momento de que se agranda la página, se va agrandando los dos botones, mientras que con 20px mantiene el mismo tamaño asignado.
+
+### Actualizando colores en los elementos
+Ya noe estaré usando rgb, pasaré a usar hexadecimales:
+```sh
+#a9c0b8 # verde claro
+-
+#84a59d # verde poco oscuro (#a9c0b8 similar poco oscuro)
+-
+#2d6a4f # verde oscuro
+-
+#4d6d63 # verde mate oscuro
+-
+#1b4332 # verde mate mas oscuro
+-
+#252323 # negro mate
+```
+estos colores fueron usados en bordes y fondos, de elementos y clase.
+* Nota: cambie el color del texto dentro de los inputs y de los placeholders, a un color claro para que sea más notoria las letras cuando en su fondo se oscurezca el color:
+```sh
+input:focus, textarea:focus{
+  color: white;
+}
+input:focus::placeholder{
+  color: white;
+}
+```
+
+### Actualización del elemento bottom con hover
+En los botones estaré usando hover, con la finalidad de que cada vez que me pare sobre los botones, cambieen de color tanto sus bordes como el fondo, al igual que el texto que contienen dentro, lo eh hecho de la siguiente forma:
+```sh
+button:hover{
+  color: #2d6a4f; # el color del texto
+  background-color: #a9c0b8;
+  border-color: #2d6a4f;
+}
+```
+

@@ -8,27 +8,28 @@
   </head>
   <body>
 
-    <h1>Vení al Gym! 💪🏼</h1>
+    <div class="bordes-titulo">
+      <h1>Vení al Gym! 💪🏼</h1>
+    </div>
 
-    <div class="contenedor">
-
+    <div>
       <form action="https://postman-echo.com/post" method="post">
         <fieldset>
           <legend>🧑🏼Datos Personales 👀</legend>
 
           <div class="datos"> 
             <label>Nombre:*</label>
-            <input class="ancho-i-s-t" type="text" name="nombre" required>
+            <input class="ancho-i-s-t texto-derecha" type="text" name="nombre" required>
           </div> <!-- nombre -->
           
           <div class="datos"> 
             <label>Apellido:*</label>
-            <input class="ancho-i-s-t" type="text" name="apellido" required>
+            <input class="ancho-i-s-t texto-derecha" type="text" name="apellido" required>
           </div> <!-- apellido -->
           
           <div class="datos"> 
             <label>Documento:*</label>
-            <input class="ancho-i-s-t" type="text" pattern="[0-9]+" title="solo números" name="dni" required>
+            <input class="ancho-i-s-t texto-derecha" type="text" pattern="[0-9]+" title="solo números" name="dni" required>
           </div> <!-- documento -->
           
           <div class="datos"> 
@@ -44,7 +45,7 @@
 
           <div class="datos">
             <label>Contanos un poco de vos...</label>
-            <textarea class="ancho-i-s-t" name="info"></textarea>
+            <textarea class="ancho-i-s-t texto-derecha" name="info"></textarea>
           </div> <!-- info -->
 
           <div class="datos">
@@ -61,20 +62,24 @@
 
           </div> <!-- genero -->
         </fieldset>
+
+        <hr>
           
         <fieldset>
           <legend>📱Datos de contacto 📩</legend>
 
           <div class="datos">
             <label>Teléfono:</label>
-            <input class="ancho-i-s-t" type="text" pattern="[+0-9]+" name="telefonno" placeholder="Código de área y número" required>
+            <input class="ancho-i-s-t texto-derecha" type="text" pattern="[+0-9]+" name="telefonno" placeholder="Código de área y número" required>
           </div> <!-- telefono -->
 
           <div class="datos">
             <label>Dirección de correo electrónico:*</label>
-            <input class="ancho-i-s-t" type="email" name="correo" placeholder="Ej: mail@gmail.com" required>
+            <input class="ancho-i-s-t texto-derecha" type="email" name="correo" placeholder="Ej: mail@gmail.com" required>
           </div> <!-- correo -->
         </fieldset>
+        
+        <hr>
 
         <fieldset>
           <legend>🚴 Actividades 🤸</legend>

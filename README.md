@@ -194,3 +194,64 @@ fieldset:focus-within{
 }
 ```
 * Nota: focus-within, es una pseudoclase que aplica estilos a un elemento (ene este caso fieldset), cuando cualquiera de sus elementos descendientes tengan el foco. Entonces si sleccion un input, cambia su color de fondo y el color de fondo del elemento fieldset.
+
+## Diseño en el título, barras, inputs, textarea e actualizaciones
+### Bordes con diseño
+Eh agregado bordes con estilo, el primero se encuentra en el título, y el segundo los utilizo como divisiones, acá te muestro como arme el del título:
+```sh
+.bordes-titulo{
+  border: 15px solid #4d6d63; # grosor del borde (15px), solido y su color
+  border-left-color: transparent;
+  border-right-color: transparent;
+  width: 80%; # esto se ajustará al 80% de la pantalla
+  margin: auto; # lo colocará en medio ya que el elemento h1 está ahora dentro de un contenedor div
+  margin-bottom: 20px; # el espacio deabajo
+}
+```
+Eh rodeado el título con bordes, pero como verás, falta el de los laterales, verás que tendrá un estilo de diagonales en el borde de arriba y debajo, esto lo logro haciendo transparente los laterales (izquierdo y derecho). Este borde creado lo tendrá un div con la clase que se ha creado:
+```sh
+<div class="bordes-titulo">
+    <h1>Vení al Gym! 💪🏼</h1>
+</div>
+```
+
+### Bordes para separar
+Se agregaron 2 bordes que están en formato de circulos, para lograr esto usé el elemento hr entre elementos fieldsets y en css le di el estilo:
+```sh
+hr {
+  border: none;
+  width: 55%;
+  border-top: 15px dotted #a9c0b8;
+  margin-bottom: 20px;
+}
+```
+* Nota: saqué los demás bordes y solo trabajé con el border-top, quien hace que esté en formato de circulos es el estilo "dotted", este borde tendrá un espacio de 20px en el margen de abajo y contendrá un ancho del 55% de la pantalla.
+
+## Ajuste en los inputs y textarea
+Eh agregado espacios en los márgenes de arriba y abajo de los inputs, textarea y select, también al momento de escribir, se iniciará del lado derecho, al igual que los placeholders notarás que se encuentran del lado derecho.
+* Espacio y inicio del lado derecho: En estos elementos habrá espacio arriba y debajo.
+```sh
+input, select, textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+```
+
+* Text-derecho: eh creado una clase solamente para que lo contengan inputs y el textarea, de esta manera solo esos elementos se iniciará a la derecha, al igual que los placeholders lo notarás del lado derecho:
+```sh
+.texto-derecha{
+  text-align: right;
+}
+```
+
+## Actualización en algunos sectores
+Retoqué algunos elementos:
+* Fieldset: tendrá un ancho del 80% de la pantalla y un margen de manera automática. 
+* Se ha agregado un ajuste solo para el textarea, tendrá unn alto que no te permitirá achicar menos de la altura asignada pero si agrandar y de manera vertical, todo eso lo logro de la siguiente manera:
+```sh
+textarea{
+  resize: vertical; # al momento de agrandar, solo lo podrás hacer vertical mente
+  height: 100px; # su alto
+  min-height: 100px; # no podrás minimizar menos de esto
+}
+```

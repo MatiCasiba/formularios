@@ -6,9 +6,11 @@ h1{
   color: white;
 }
 fieldset{
+  width: 80%;
   background-color: rgb(196, 203, 202);
   border: 2px solid rgb(35, 81, 55);
   border-radius: 4px;
+  margin: auto;
   margin-bottom: 20px;
 }
 legend{
@@ -27,6 +29,14 @@ label{
 
 input, select, textarea{
   border: 1px solid rgb(45, 72, 57);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+textarea{
+  resize: vertical;
+  height: 100px;
+  min-height: 100px; 
 }
 
 button{
@@ -35,6 +45,13 @@ button{
   padding: 2%;
   border-color: rgb(170, 191, 188);
   border-radius: 5px;
+}
+
+hr {
+  border: none;
+  width: 55%;
+  border-top: 15px dotted #a9c0b8;
+  margin-bottom: 20px;
 }
 
 /* clases */
@@ -60,6 +77,19 @@ button{
 }
 .terminos{
   color: white;
+}
+
+.bordes-titulo{
+  border: 15px solid #4d6d63;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.texto-derecha{
+  text-align: right;
 }
 
 /* focus */

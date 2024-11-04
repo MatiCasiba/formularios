@@ -329,3 +329,100 @@ button:hover{
 }
 ```
 
+
+## FUTURE FORMULARIO
+Cree otro archivo css y realicé una temática futuristica, para esto usé una imágen de fondo, utilicé colores llamativos y eh aplicado un neon en el título y los legends, también eh importado otra dos fuentes y trabajé un poco con los tamaños del texto.
+
+### Imgen de fondo y color
+La imagen que esta de fondo, se encuentra dentro de la carpeta public (en una carpeta llamada image), para colocarlo de fondo lo realicé de la siguiente manera:
+```sh
+html{
+  background-image: url(public/image/pesa.png); # la direccion de donde se encuentra la imagen
+  background-color: #59189a; # su color de fondo
+}
+```
+### Colores y neon
+Como bien mencioné, eh usado colores llamativos, al momento de trabajar con neon lo de esta manera:
+```sh
+.bordes-titulo{
+    box-shadow: 0 0 30px #ccff00;
+    border-radius: 20px;
+}
+```
+El box-shadow me va a permitir trabajar con este estilo, la función de este es generar una caja con sombra al rededor, entonces utilicé un color llamativo/fluor para darle un estilo neon, no solo lo eh usado en esto, sino tambien en los elementos de legend y botones. No siempre mantendrá el color asignado (#ccff00, que es el que verás en todo texto, bordes y fondo de botones, del formulario), cuando seleccione un input, cambiará el color a un rojo, tanto los bordes del legened como los del fieldset, input, texto y botones. Para esto lo que hice fue trabajar con los hover (para los elementos button) y los focus, en esto encontrarás el color rojo (#ef233c):
+```sh
+legend{
+  background-color: #240046;
+  box-shadow: 0 0 20px #ccff00;
+  color: #ccff00; # color del texto
+  border: 2px solid #ccff00;
+}
+input:focus, textarea:focus{
+  background-color: #5a189a;
+  color: #ef233c;
+  border-color: #ef233c;
+}
+input:focus::placeholder{
+  color: #ef233c;
+}
+  
+fieldset:focus-within{
+  border-color: #ef233c;
+}
+fieldset:focus-within legend{
+  border-color: #ef233c;
+  box-shadow: 0 0 30px #ef233c;
+  color: #ef233c;
+}
+fieldset:focus-within label{
+  color: #ef233c;
+}
+fieldset:focus-within select{
+  color: #ef233c;
+}
+fieldset:focus-within p{
+  color: #ef233c;
+}
+  
+# hovers
+.bordes-titulo:hover{
+  box-shadow: 0 0 30px #ef233c; 
+  border-radius: 50px;
+}
+
+h1:hover{
+  color: #ef233c; # se pone de color rojo el texto
+}
+
+ button:hover{
+  color: #ef233c;
+  background-color: #ccff00;
+  box-shadow: 0 0 30px #ef233c;
+  border-color: #ef233c;
+}
+.terminos:hover{ # cuando te pares en el texto donde se encuentran la condicion y novedades (al igual que en el elemento p), se pondrá de color verde fluor (con el que eh estado trabajando en todo el formulario)
+  color: #ccff00;
+}
+p:hover{
+  color: #ccff00;
+}
+```
+* Nota, em el fondo de los inputs habrá un color violeta más oscuro y cuando se seleccione, pasará a tener un color violeta un poco claro.
+* En los botones notarás que cuando te pares sobre ellos, tendrás un color rojo en el texto, bordes y sombra, eso lo logré hacerlo con el button:hover.
+
+### Color de fondo en los fieldset
+Notarás que en los fueldset, conserva su color de fondo, pero se ve transparente, para hacerlo lo hice con los siguiente:
+```sh
+fieldset{
+  background-color: #240046df; 
+}
+```
+### Los 2 bordes entre los fieldset
+Lo que eh hecho ahi, fue solamente modificar el color, que tenga un estilo solid y disminuir el grosor
+```sh
+hr {
+  border: 2px solid #ccff00;
+  border-radius: 10px;
+}
+```
+

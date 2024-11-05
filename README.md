@@ -445,3 +445,24 @@ ef233c # rojo claro (en la gama de rojos)
 -
 11082e # violeta mas ocuro que #240046 (en la gama de violetas)
 ```
+
+## Actualizacion del future-style y index.html
+Eh modificado el degradado de lña sombra en el título, lo eh reducido
+```sh
+.bordes-titulo{
+  box-shadow: 0 0 15px #ccff00;
+}
+```
+También agregue una nueva clase para un elemento p:
+```sh
+.p-en-fieldset{
+  margin-left: auto; # en el ultimo fieldset habia un elemento p que no se encontraba de todo al lado izquierdo, con esta correción logrue hacerlo.
+}
+```
+index.html:
+```sh
+<fieldset>
+  <p class="p-en-fieldset">texto<p> # nueva clase
+  # todas las etiquetas
+<fieldset>
+```

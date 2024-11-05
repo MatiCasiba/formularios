@@ -87,6 +87,9 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.p-en-fieldset{
+  margin-left: auto;
+}
 .color-p{
   color: white;
 }

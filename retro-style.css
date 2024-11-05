@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap');
+
+html{
+  background-image: url(public/image/4051038_athletic_football_running\ to\ catch_icon.png);
+    background-color: #efb366;
+    font-family: "Righteous", serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #22796f;
+    text-shadow: 1px 1px #000000;
+}
+body{
+  width: 100%;
+  background-color: #efb466c7;
+}
+h1{
+  background-color: #5fad56;
+  font-size: 40px;
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 5px 5px #204b1b;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+}
+  
+p{
+  margin-bottom: 40px;
+  margin-left: 8.5%;
+}
+
+
+fieldset{
+  width: 80%;
+  background-color: #e76f51;
+  border: 6px outset #5fad56;
+  box-shadow: 15px 10px 10px #000000d6;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+legend{
+  background-color: #e76f51;
+  color: #22796f;
+  text-shadow: 1px 1px #030000;
+  padding: 1.5%;
+  border: 5px solid #5fad56;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+div{
+  margin: 3px 0 3px 0;
+}
+  
+label{
+  display: block;
+}
+  
+input, select, textarea{
+  border: 2px inset #22796f;
+  background-color: #babb74;
+  color: #22796f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input::placeholder{
+  color: #5fad56;
+}
+  
+textarea{
+  resize: vertical;
+  height: 100px;
+  min-height: 100px; 
+}
+  
+button{
+  font-family: "Righteous", serif;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #e76f51;
+  color: #22796f;
+  text-shadow: 1px 1px #000000;
+  padding: 20px;
+  border-color: #5fad56;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+  
+hr {
+  width: 80%;
+  border: 3px outset #22796f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+  
+  /* clases */
+.datos{
+  text-align: center;
+}
+  
+.contenedor-cuadrados-circulos input, .contenedor-cuadrados-circulos label{
+  display: inline-block;
+}
+  
+.ancho-i-s-t{
+  width: 60%;
+  padding: 1%;
+}
+  
+.sede{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.p-en-fieldset{
+  margin-left: auto;
+}
+.color-p{
+  color: #5fad56;
+}
+.terminos{
+  color: #5fad56;
+  margin-left: 8.5%;
+}
+  
+.bordes-titulo{
+  background-color: #5fad56;
+  box-shadow: 15px 10px 10px #000000d6;
+  border: 5px outset #e76f51;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+  
+.texto-derecha{
+  text-align: right;
+}
+  
+  /* focus */
+input:focus, textarea:focus{
+  background-color: #8ab17d;
+  color: #204b1b;
+}
+input:focus::placeholder{
+  color: #22796f;
+}
+  
+fieldset:focus-within{
+  background-color: #ee8959;
+  border-color: #22796f;
+}
+fieldset:focus-within legend{
+  color: #5fad56;
+  border-color: #22796f;
+  text-shadow: 2px 2px #204b1b    
+}
+fieldset:focus-within label{
+  color: #5fad56;
+  text-shadow: 2px 2px #204b1b;
+}
+fieldset:focus-within select{
+  color: #5fad56;
+}
+fieldset:focus-within p{
+  color: #5fad56;
+  text-shadow: 2px 2px #204b1b;
+}
+  
+  /* hover */
+
+button:hover{
+  box-shadow: 15px 10px 10px #000000d6;
+  color: #e76f51;
+  background-color: #eae2b7;
+  border-color: #22796f;
+}
+.terminos:hover{
+  color: #22796f;
+}
+.color-p:hover{
+  color: #22796f;
+}

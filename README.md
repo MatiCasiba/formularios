@@ -426,3 +426,22 @@ hr {
 }
 ```
 
+### Colores usados:
+Los colores que eh usado para este fromulario, fueron:
+```sh
+ccff00 # verde fluor (en la gama de verdes)
+-
+ccff006c # verde fluor medio transparente ( en la gama de verdes)
+-
+ef233c # rojo claro (en la gama de rojos)
+-
+59189a # violeta (en la gama de violetas)
+-
+5a189a # violeta similar al #59189a (en la gama de violetas)
+-
+240046 # violeta oscuro (en la gama de violetas)
+-
+240046df # violeta oscuro medio transparente (en la gama de violetas)
+-
+11082e # violeta mas ocuro que #240046 (en la gama de violetas)
+```

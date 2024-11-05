@@ -466,3 +466,112 @@ index.html:
   # todas las etiquetas
 <fieldset>
 ```
+
+## Formulario retro
+Para este formuladio eh usado colores "apagados" por asi decirlo, tipo viejos, para darle el toque retro, importé dos tipografías, descargué una imágen para el fondo y trabajé con sombras:
+
+### Las sombras
+Eh utilizado sombras en los textos, fieldset y buttons, la finalidad es darle un estilo 3D, lo hice de esta manera:
+* En texto: lo tienen todos lo que se encuentra dentro del elemento html, mel del título será diferente:
+```sh
+html{
+    text-shadow: 1px 1px #000000; # derecha(1px) bajada(1px) color negro
+}
+h1{
+    text-shadow: 5px 5px #204b1b;
+}
+legend{
+    text-shadow: 1px 1px #030000;
+}
+button{
+    text-shadow: 1px 1px #000000;
+}
+```
+* En cajas: quienes lo tendrán al efecto de sombra, serán los elementos fieldset, buttons y la clase para el título:
+```sh
+fieldset{
+    box-shadow: 15px 10px 10px #000000d6; # derecha, bajada, degradacion (10px), color
+}
+
+.bordes-titulo{
+  box-shadow: 15px 10px 10px #000000d6; 
+}
+
+button:hover{
+  box-shadow: 15px 10px 10px #000000d6;
+}
+
+```
+En las sombras de los textos, no siempre mantendrá el mismo color, cuando selecciones en un input, verás que cambia el color del texto y su sombra, eso lo modifiqué en la parte de focus del archivo css (tambien el color de fondo del input, su texto dentro y los place holder). Al igual que cuando te pares en el texto donde se encuentra la seleccion de condicion y novedades, cambia su color de texto pero no su color de sombra, tammbien lo tendrá los botones, esto se logra con un hover:
+```sh
+button{
+  background-color: #e76f51; # color del fondo
+  color: #22796f; #color del texto
+  text-shadow: 1px 1px #000000; #sombra de texto
+  border-color: #5fad56; #color de bordes
+}
+
+# y para modificar su colores cuando me pare en ellos, aqui usaré el hover
+button:hover{
+  box-shadow: 15px 10px 10px #000000d6; # le agregue una sombra para el boton
+  color: #e76f51; # cambia color de texto
+  background-color: #eae2b7; # cambia color de fondo
+  border-color: #22796f; # cambia color del borde
+}
+```
+* Con el focus cambiaremos varias cosas de los colores asignados al momento de que me seleccione un input
+```sh
+input:focus, textarea:focus{
+  background-color: #8ab17d;
+  color: #204b1b;
+}
+input:focus::placeholder{
+  color: #22796f;
+}
+  
+fieldset:focus-within{
+  background-color: #ee8959;
+  border-color: #22796f;
+}
+fieldset:focus-within legend{
+  color: #5fad56;
+  border-color: #22796f;
+  text-shadow: 2px 2px #204b1b    
+}
+fieldset:focus-within label{
+  color: #5fad56;
+  text-shadow: 2px 2px #204b1b;
+}
+fieldset:focus-within select{
+  color: #5fad56;
+}
+fieldset:focus-within p{
+  color: #5fad56;
+  text-shadow: 2px 2px #204b1b;
+}
+```
+
+### Imágen y color de fondo
+Eh descargado una imágen icono, esto se multiplicará de fondo como verás. Para sacar el contraste de esta imagen, trabajé con el fondo del elemento html y eh agregado un color de fondo al elemento body, solo que el color de este se transparenta, esto le quitará la intensidad del color en la imágen:
+```sh
+html{
+  background-image: url(public/image/4051038_athletic_football_running\ to\ catch_icon.png);
+  background-color: #efb366;
+}
+
+body{ 
+  width: 100%; # el color ocupará la totalidad del ancho de la pantalla
+  background-color: #efb466c7;
+}
+```
+
+### HR
+Modifiqué el color grosor y estilo del elemento hr, lo verás entre dos fieldset:
+```sh
+hr {
+  width: 80%;
+  border: 3px outset #22796f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+```

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap');
 
 html{
-  background-image: url(public/image/atletic-icon.png);
+  background-image: url(/image/atletic-icon.png);
     background-color: #efb366;
     font-family: "Righteous", serif;
     letter-spacing: 1px;

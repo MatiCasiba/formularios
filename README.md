@@ -575,3 +575,31 @@ hr {
   margin-bottom: 20px;
 }
 ```
+### Colores usados
+Te diré los colores que use en este formulario retro:
+```sh
+ffffff # blanco
+-
+eae2b7 # amarillo opaco 
+-
+efb366 # naranja claro
+-
+efb466c7 # naranja claro transparente
+-
+e76f51m # naranja medio oscuro
+-
+5fad56 # verde manzana
+-
+babb74 # verde amarillento
+-
+22796f # verde oscuro
+-
+204b1b # verde mas oscuro que #22796f
+-
+000000d6 # negro transparente
+-
+000000 # negro
+```
+
+## Actuializacion del título
+Antes el elemento h1 se encontraba identado a un div con class="bordes-titulo", eliminé el div con la clase, esta clase se la coloqué al elemento h1. El motivo por el cual lo hice es porque el div me estaba dando mucho espacio a los alrededores del titulo, entonces con esta modificación ahora los bordes de arriba y abajo, se encuentran más cerca del texto.

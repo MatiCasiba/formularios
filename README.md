@@ -1,6 +1,6 @@
 * Nombre: Matias Casiba
-* Link Github Repo:
-* Link Netlify:
+* Link Github Repo: https://github.com/MatiCasiba/formularios
+* Link Netlify: https://formulario-estilo.netlify.app/
 
 # Formularios
 
